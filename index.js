@@ -3,7 +3,7 @@ let app = express();
 const fs = require("fs");
 const path = require("path");
 
-app.use(express.static("C:\\Users\\irg\\OneDrive\\Desktop\\remote_terminal\\public"));
+app.use(express.static(`${__dirname}\\public`));
 app.use(express.json());
 
 
