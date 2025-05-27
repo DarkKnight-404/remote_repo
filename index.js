@@ -39,8 +39,8 @@ app.post("/projDirs", (req, res) => {
         let arr = val.fileArr.map((dirent) => {
             return {
                 name: dirent.name,
-                parentPath: dirent.parentPath.replace(/\//g, "\\").replace(/\\/g, "\\\\"),
-                path: path.join(dirent.path, dirent.name).replace(/\//g, "\\").replace(/\\/g, "\\\\")
+                parentPath: dirent.parentPath.replace(/\//g,"\\").replace(/\\/g,"\\\\"),
+                path: path.join(dirent.path, dirent.name).replace(/\//g,"\\").replace(/\\/g,"\\\\")
             }
         })
         console.log(arr);
